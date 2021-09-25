@@ -1,0 +1,17 @@
+{
+  "name": "Screen Record For Chrome",
+  "description": "Build an Screen Record For Chrome!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.toantq.space/*"],
+      "css": ["bundled.css"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
